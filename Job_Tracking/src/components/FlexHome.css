@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f5fa;
+  width: 100%;
+  min-height: 100vh; 
+  overflow-x: hidden;
+  overflow-y: auto; 
+}
+
+.container-flexhome {
+  
+  
+  width: 100%;
+  height: 800px;
+  padding: 20px;
+  padding-top: 80px; 
+  background-color: #EAF4FC;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.degree-card{
+  background-color: rgb(170, 230, 245);
+}
+
+.contests-card{
+  background-color: rgb(241, 210, 149);
+}
+
+.profile-card{
+  background-color: rgb(183, 204, 246);
+  align-items: center;
+}
+
+.resume-builder{
+  background-color: rgb(230, 230, 69);
+}
+
+.xclusives-card{
+  background-color: rgb(244, 180, 238);
+}
+
+.blog-card{
+  background-color: rgb(150, 240, 104);
+}
+
+.search-jobs {
+  grid-column: span 3;
+  background: linear-gradient(135deg, #e8d4ff, #d4b8ff);
+  text-align: center;
+  padding: 40px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 80%;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-avatar {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 50%;
+
+}
+
+.button {
+  background-color: #00a859;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #008f4c;
+}

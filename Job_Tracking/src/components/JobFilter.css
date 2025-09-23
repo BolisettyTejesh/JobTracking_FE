@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container for the job filter and job list */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* Heading Styles */
+h2 {
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #28a745;
+    padding-bottom: 8px;
+}
+
+/* Job Card Styles */
+.job-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e6ea;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(40, 167, 69, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(40, 167, 69, 0.2);
+}
+
+.job-card h3 {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.job-card p {
+    font-size: 1rem;
+    margin: 6px 0;
+    line-height: 1.4;
+    color: #495057;
+}
+
+.job-card p b {
+    color: #212529;
+}
+
+/* Form Styles */
+form {
+    background-color: #fafafa;
+    padding: 25px 30px;
+    border-radius: 12px;
+    border: 1px solid #dfe3e8;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.08);
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form textarea {
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    border: 1.5px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #495057;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="date"]:focus,
+form textarea:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.3);
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form button {
+    background: linear-gradient(90deg, #20c997, #28a745);
+    border: none;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(40, 167, 69, 0.3);
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+    display: inline-block;
+    width: 100%;
+}
+
+form button:hover {
+    background: linear-gradient(90deg, #218838, #1e7e34);
+    box-shadow: 0 10px 20px rgba(30, 126, 52, 0.6);
+}
+
+/* Responsive Layout for form elements */
+@media (min-width: 600px) {
+    form input[type="text"],
+    form input[type="number"],
+    form input[type="date"],
+    form textarea {
+        max-width: 48%;
+        display: inline-block;
+        margin-right: 4%;
+    }
+
+    form textarea {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    form input[type="text"]:nth-child(2n),
+    form input[type="number"]:nth-child(2n),
+    form input[type="date"]:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    form button {
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/* Error and Success Messages */
+.error-message {
+    color: #dc3545;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+}
+
+.success-message {
+    color: #28a745;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+}
+
+/* Scrollbar Styling for descriptions (if overflow) */
+.job-card p.description {
+    max-height: 80px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+/* Custom Scrollbar for Webkit Browsers */
+.job-card p.description::-webkit-scrollbar {
+    width: 8px;
+}
+
+.job-card p.description::-webkit-scrollbar-thumb {
+    background-color: #28a745;
+    border-radius: 10px;
+}
+
+.job-card p.description::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Utility classes */
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
